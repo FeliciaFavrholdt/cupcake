@@ -1,18 +1,16 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@page errorPage="../error.jsp" isErrorPage="false" %>
+<%@page errorPage="error.jsp" isErrorPage="false" %>
 
 <t:pagetemplate>
         <jsp:attribute name="header">
-             Index
+            WELCOME TO OLSKER CUPCAKES
     </jsp:attribute>
 
     <jsp:body>
-
-        <h1>WELCOME TO OLSKER CUPCAKES</h1>
         <div>
-            <img src="../images/image1.png" alt="image1" width="400px">
+            <img src="images/image1.png" alt="image1" width="400px">
         </div>
         <div>
             <p>At Olsker cupcakes we make cupcakes for every desire!</p>

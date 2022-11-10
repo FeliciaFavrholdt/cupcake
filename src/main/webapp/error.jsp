@@ -6,7 +6,7 @@
 
 <t:pagetemplate>
     <jsp:attribute name="header">
-             Error page
+             ERROR PAGE
     </jsp:attribute>
 
     <jsp:body>
@@ -32,7 +32,7 @@
             <p>Abandon ship. We have no idea how you ended up here!</p>
         </c:if>
 
-        <p>Jump back to the <a href="WEB-INF/index.jsp">Frontpage</a>,
+        <p>Jump back to the <a href="index.jsp">Frontpage</a>,
             or try <a href="login.jsp">logging</a> in again.</p>
 
     </jsp:body>

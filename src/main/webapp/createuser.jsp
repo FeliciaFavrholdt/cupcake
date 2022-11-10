@@ -5,12 +5,11 @@
 
 <t:pagetemplate>
         <jsp:attribute name="header">
-            Create user
+            CREATE USER
     </jsp:attribute>
 
     <jsp:body>
 
-        <h1>CREATE A NEW USER</h1>
         <p>Don't have a profile? Create a new user here.</p>
 
         <div class="form-outline mb-4">

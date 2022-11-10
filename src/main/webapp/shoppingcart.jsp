@@ -5,12 +5,10 @@
 
 <t:pagetemplate_user>
         <jsp:attribute name="header">
-             Shopping Cart
+             SHOPPING CART
     </jsp:attribute>
 
     <jsp:body>
-
-        <h1>Shopping cart</h1>
 
         <c:forEach var="item" items="${sessionScope.cart.cupcakeList}">
             Topping: ${item.toppingID} Bottom: ${item.bottomID} Amount: ${item.amount}

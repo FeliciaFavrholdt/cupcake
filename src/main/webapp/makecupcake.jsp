@@ -4,12 +4,10 @@
 
 <t:pagetemplate_user>
         <jsp:attribute name="header">
-             Make a cupcake
+             MAKE A CUPCAKE
     </jsp:attribute>
 
     <jsp:body>
-
-        <h1>Design your cupcake</h1>
 
         <form action="addtocart" method="post">
             <label for="toppings">The Toppings:</label>

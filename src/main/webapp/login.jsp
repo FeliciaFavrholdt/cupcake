@@ -6,18 +6,18 @@
 
 <t:pagetemplate>
     <jsp:attribute name="header">
-             Login
+             LOGIN
     </jsp:attribute>
 
 
     <jsp:body>
-
-        <h3>You can log in here</h3>
         <div class="form-outline mb-4">
             <form action="login" style="width:100px" method="post">
                 <input type="text" id="username" placeholder="name@mail.com" name="username"/>
                 <br>
+                <br>
                 <input type="password" id="password" placeholder="password" name="password"/>
+                <br>
                 <br>
                 <input type="submit" value="Log in"/>
             </form>

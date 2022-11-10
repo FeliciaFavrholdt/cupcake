@@ -5,12 +5,10 @@
 
 <t:pagetemplate_admin>
         <jsp:attribute name="header">
-             All orders
+            ORDERS
     </jsp:attribute>
 
     <jsp:body>
-
-        <h1>Orders</h1>
         <p>Choose the account in the menu:</p>
 
         <div class="">

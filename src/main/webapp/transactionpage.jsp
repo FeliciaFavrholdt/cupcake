@@ -5,14 +5,12 @@
 
 <t:pagetemplate_user>
         <jsp:attribute name="header">
-             Transaction page
+             TRANSACTION
     </jsp:attribute>
 
     <jsp:body>
 
-        <h1>Transaction</h1>
-
-        <h1>Your order:</h1>
+        <h3>Your order:</h3>
 
         <div class="">
             <table>

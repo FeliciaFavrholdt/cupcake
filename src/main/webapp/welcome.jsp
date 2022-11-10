@@ -5,20 +5,19 @@
 
 <t:pagetemplate_user>
 
-        <jsp:attribute name="header">
-             Welcome
+    <jsp:attribute name="header">
+             WELCOME TO OLSKER CUPCAKES
     </jsp:attribute>
 
     <jsp:body>
-
-        <h1>WELCOME TO OLSKER CUPCAKES</h1>
-        <img src="" alt="Image1">
-        <p>At Olsker cupcakes we make cupcakes for every desire!</p>
-        <p>You can order your cupcakes by choosing "make a cupcake" at the top of the page.</p>
-        <br>
-        <br>
+        <div>
+            <img src="images/image1.png" alt="image1" width="400px">
+        </div>
+        <div>
+        <p>We love cupcakes here at Olsker Cupcakes!</p>
+        <p>Want to order some? Click "make a cupcake" at the top of the page.</p>
         <p>Have fun!</p>
-
+        </div>
     </jsp:body>
 
 </t:pagetemplate_user>
