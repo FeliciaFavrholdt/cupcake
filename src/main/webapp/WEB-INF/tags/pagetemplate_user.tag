@@ -65,7 +65,6 @@
         DAT 2.sem 2022 - CPH Business
         </div>
         <div class="col">
-            <jsp:invoke fragment="footer"/><br/>
             <p>&copy; Olsker Cupcakes</p>
         </div>
         <div class="col">

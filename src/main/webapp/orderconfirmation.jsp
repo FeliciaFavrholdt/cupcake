@@ -4,12 +4,15 @@
 <%@page errorPage="error.jsp" isErrorPage="false" %>
 
 <t:pagetemplate_user>
+        <jsp:attribute name="header">
+             Order Confirmation
+    </jsp:attribute>
 
     <jsp:body>
 
-        <h1>Your order has been confirmed!</h1>
+        <h3>Your order has been confirmed!</h3>
 
-        <p>You can now pick up your orer at Olsken Cupcakes within 2 hours.</p>
+        <p>You can now pick up your order at Olsker Cupcakes within 2 hours.</p>
 
     </jsp:body>
 

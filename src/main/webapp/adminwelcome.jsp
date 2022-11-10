@@ -5,11 +5,15 @@
 
 <t:pagetemplate_admin>
 
+    <jsp:attribute name="header">
+             Admin page
+    </jsp:attribute>
+
     <jsp:body>
 
-    <h1>Hello Admin!</h1>
-    <img src="" alt="Image1">
-    <p>You have more editing privileges. You can see users or orders at the top of the page.</p>
+        <h1>Hello Admin!</h1>
+        <img src="" alt="Image1">
+        <p>You have more editing privileges. You can see users or orders at the top of the page.</p>
     </jsp:body>
 
 

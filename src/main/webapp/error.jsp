@@ -9,10 +9,6 @@
              Error page
     </jsp:attribute>
 
-    <jsp:attribute name="footer">
-            Error page
-    </jsp:attribute>
-
     <jsp:body>
 
         <p>An error has occured. This is the best message we can come up
@@ -36,7 +32,7 @@
             <p>Abandon ship. We have no idea how you ended up here!</p>
         </c:if>
 
-        <p>Jump back to the <a href="index.jsp">Frontpage</a>,
+        <p>Jump back to the <a href="WEB-INF/index.jsp">Frontpage</a>,
             or try <a href="login.jsp">logging</a> in again.</p>
 
     </jsp:body>

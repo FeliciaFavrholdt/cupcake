@@ -4,6 +4,9 @@
 <%@page errorPage="error.jsp" isErrorPage="false" %>
 
 <t:pagetemplate_admin>
+        <jsp:attribute name="header">
+             All orders
+    </jsp:attribute>
 
     <jsp:body>
 
@@ -11,15 +14,15 @@
         <p>Choose the account in the menu:</p>
 
         <div class="">
-        <form action="">
-        <label for="users">Users:</label>
-        <select name="users" id="users">
-            <option value="id1">email1</option>
-            <option value="id2">email2</option>
-            <option value="id3">email3</option>
-            <option value="id4">email4</option>
-        </select>
-        </form>
+            <form action="">
+                <label for="users">Users:</label>
+                <select name="users" id="users">
+                    <option value="id1">email1</option>
+                    <option value="id2">email2</option>
+                    <option value="id3">email3</option>
+                    <option value="id4">email4</option>
+                </select>
+            </form>
             <h3>Orderlist</h3>
             <table>
                 <tr>

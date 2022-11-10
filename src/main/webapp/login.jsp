@@ -9,21 +9,18 @@
              Login
     </jsp:attribute>
 
-    <jsp:attribute name="footer">
-            Login
-    </jsp:attribute>
 
     <jsp:body>
 
         <h3>You can log in here</h3>
         <div class="form-outline mb-4">
-        <form action="login" style="width:100px" method="post">
-            <input type="text" id="username" placeholder="name@mail.com" name="username"/>
-            <br>
-            <input type="password" id="password" placeholder="password" name="password"/>
-            <br>
-            <input type="submit"  value="Log in"/>
-        </form>
+            <form action="login" style="width:100px" method="post">
+                <input type="text" id="username" placeholder="name@mail.com" name="username"/>
+                <br>
+                <input type="password" id="password" placeholder="password" name="password"/>
+                <br>
+                <input type="submit" value="Log in"/>
+            </form>
         </div>
 
     </jsp:body>

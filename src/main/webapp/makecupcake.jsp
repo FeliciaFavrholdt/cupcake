@@ -3,6 +3,9 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <t:pagetemplate_user>
+        <jsp:attribute name="header">
+             Make a cupcake
+    </jsp:attribute>
 
     <jsp:body>
 
