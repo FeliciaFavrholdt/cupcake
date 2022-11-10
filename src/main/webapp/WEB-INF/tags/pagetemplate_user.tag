@@ -29,11 +29,23 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav justify-content-start">
-                    <a class="nav-item nav-link" href="${pageContext.request.contextPath}/index.jsp">Home</a>
-                    <a class="nav-item nav-link" href="${pageContext.request.contextPath}/aboutus.jsp">About us</a>
-                    <a class="nav-item nav-link" href="${pageContext.request.contextPath}/createuser.jsp">Create user</a>
-                    <a class="nav-item nav-link" href="${pageContext.request.contextPath}/login.jsp">Login</a>
+                    <a class="nav-item nav-link" href="${pageContext.request.contextPath}/welcomeUser.jsp">Home</a>
+                    <a class="nav-item nav-link" href="${pageContext.request.contextPath}/makecupcake.jsp">Make a cupcake</a>
 
+
+                </div>
+                <div class="navbar-nav justify-content-end">
+                    <c:if test="${sessionScope.user == null }">
+                        <p>User role</p>
+                        <a class="nav-item nav-link" href="${pageContext.request.contextPath}/">Username</a>
+                    </c:if>
+
+                    <c:if test="${sessionScope.user != null }">
+                        <p>User role</p>
+                        <a class="nav-item nav-link" href="${pageContext.request.contextPath}/logout">Log out</a>
+                    </c:if>
+
+                    <a class="nav-item nav-link" href="${pageContext.request.contextPath}/shoppingcart.jsp"><img src="images/shoppingcart.png" width="20px;" height="20px;"></a>
                 </div>
             </div>
         </div>

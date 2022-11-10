@@ -29,11 +29,19 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav justify-content-start">
-                    <a class="nav-item nav-link" href="${pageContext.request.contextPath}/index.jsp">Home</a>
-                    <a class="nav-item nav-link" href="${pageContext.request.contextPath}/aboutus.jsp">About us</a>
-                    <a class="nav-item nav-link" href="${pageContext.request.contextPath}/createuser.jsp">Create user</a>
-                    <a class="nav-item nav-link" href="${pageContext.request.contextPath}/login.jsp">Login</a>
+                    <a class="nav-item nav-link" href="${pageContext.request.contextPath}/adminusers.jsp">Users</a>
+                    <a class="nav-item nav-link" href="${pageContext.request.contextPath}/adminorders.jsp">Orders</a>
 
+                </div>
+                <div class="navbar-nav justify-content-end">
+                    <c:if test="${sessionScope.user == null }">
+                        <p>Admin role</p>
+                        <a class="nav-item nav-link" href="${pageContext.request.contextPath}/">Username</a>
+                    </c:if>
+                    <c:if test="${sessionScope.user != null }">
+                        <p>Admin role</p>
+                        <a class="nav-item nav-link" href="${pageContext.request.contextPath}/logout">Log out</a>
+                    </c:if>
                 </div>
             </div>
         </div>
