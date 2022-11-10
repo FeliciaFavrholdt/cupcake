@@ -8,7 +8,7 @@
 
         <h1>Design your cupcake</h1>
 
-        <form action="AddToCart" method="post">
+        <form action="addtocart" method="post">
             <label for="toppings">The Toppings:</label>
             <select name="toppings" id="toppings">
                 <option value="1">Chocolate</option>
