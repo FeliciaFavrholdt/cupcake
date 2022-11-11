@@ -25,7 +25,7 @@
                         <td><p>(${item.quantity}) cupcake: ${item.toppingID} + ${item.bottomID}</p></td>
                         <td><p>${item.cupcakePrice}</p></td>
                         <td><button name="DeleteFromCart">Delete</button></td>
-                        <td><button name="EditCupcake">Edit</button></p></td>
+                        <td><button name="EditCupcake">Edit</button></td>
                     </tr>
                 </c:forEach>
                 <td style="font-weight: bold">Total price</td>
@@ -36,7 +36,7 @@
         </div>
         <br>
         <div class="">
-            <button name="orderconfirmation">Checkout</button>
+            <button name="OrderConfirmation">Checkout</button>
         </div>
     </jsp:body>
 </t:pagetemplate_user>
