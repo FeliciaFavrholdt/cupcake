@@ -24,8 +24,8 @@
                     <tr>
                         <td><p>(${item.quantity}) cupcake: ${item.toppingID} + ${item.bottomID}</p></td>
                         <td><p>${item.cupcakePrice}</p></td>
-                        <td><p><input type="submit" value="Delete"></p></td>
-                        <td><p><input type="submit" value="Edit"></p></td>
+                        <td><button name="DeleteFromCart">Delete</button></td>
+                        <td><button name="EditCupcake">Edit</button></p></td>
                     </tr>
                 </c:forEach>
                 <td style="font-weight: bold">Total price</td>

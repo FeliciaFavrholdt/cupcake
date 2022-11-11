@@ -3,50 +3,15 @@ package dat.backend.model.entities;
 public class Cupcake {
     private Topping topping;
     private Bottom bottom;
-    private int toppingID;
-    private int bottomID;
     private int quantity;
     private double cupcakePrice;
 
     //constructor
-    public Cupcake(int toppingID, int bottomID, int quantity) {
-        this.toppingID = toppingID;
-        this.bottomID = bottomID;
-        this.quantity = quantity;
-    }
-
-    //overloaded constructor
     public Cupcake(Topping topping, Bottom bottom, int toppingID, int bottomID, int quantity, double totalPrice) {
         this.topping = topping;
         this.bottom = bottom;
-        this.toppingID = toppingID;
-        this.bottomID = bottomID;
         this.quantity = quantity;
         this.cupcakePrice = cupcakePrice;
-    }
-
-    public int getToppingID() {
-        return toppingID;
-    }
-
-    public void setToppingID(int toppingID) {
-        this.toppingID = toppingID;
-    }
-
-    public int getBottomID() {
-        return bottomID;
-    }
-
-    public void setBottomID(int bottomID) {
-        this.bottomID = bottomID;
-    }
-
-    public int getQuantity() {
-        return quantity;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
     }
 
     public Topping getTopping() {
@@ -65,6 +30,14 @@ public class Cupcake {
         this.bottom = bottom;
     }
 
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
     public double getCupcakePrice() {
         return cupcakePrice;
     }
@@ -78,8 +51,6 @@ public class Cupcake {
         return "Cupcake{" +
                 "topping=" + topping +
                 ", bottom=" + bottom +
-                ", toppingID=" + toppingID +
-                ", bottomID=" + bottomID +
                 ", quantity=" + quantity +
                 ", cupcakePrice=" + cupcakePrice +
                 '}';

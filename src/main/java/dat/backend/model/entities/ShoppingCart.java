@@ -14,6 +14,10 @@ public class ShoppingCart {
         cupcakeList.add(cupcake);
     }
 
+    public void remove(Cupcake cupcake) {
+        cupcakeList.remove(cupcake);
+    }
+
     public Object getNumberOfCupcakes() {
         return cupcakeList.size();
     }
