@@ -11,15 +11,6 @@
     <jsp:body>
 
         <h3>Your order</h3>
-
-        <div class="">
-        <table>
-        <tr>
-            <th style="font-weight: bold">Order id</th>
-            <th style="font-weight: bold">Customer id</th>
-            <th style="font-weight: bold">Quantity</th>
-        </tr>
-
         <p>Your order has been confirmed!</p>
         <p>You can now pick up your order at Olsker Cupcakes within 2 hours.</p>
 

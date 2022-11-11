@@ -14,7 +14,6 @@ public class Bottom {
     public Bottom(String bottoms, int bottomPrice) {
         this.bottoms = bottoms;
         this.bottomPrice = bottomPrice;
-
     }
 
     public int getBottomID() {
