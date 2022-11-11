@@ -14,11 +14,7 @@ public class ShoppingCart {
         cupcakeList.add(cupcake);
     }
 
-    public Object getNumberOfCupcakes() {
+    public int getNumberOfCupcakes() {
         return cupcakeList.size();
-    }
-
-    public List<Cupcake> getCupcakeList() {
-        return cupcakeList;
     }
 }

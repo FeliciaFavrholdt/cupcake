@@ -10,12 +10,7 @@
 
     <jsp:body>
 
-        <p>Number of lines in the shoppingcart: ${requestScope.cartsize}</p>
-
-        <c:forEach var="item" items="${sessionScope.cart.cupcakeList}">
-            Topping: ${item.toppingID} Bottom: ${item.bottomID} Amount: ${item.quantity}
-        </c:forEach>
-
+        Number of lines in cart: ${requestScope.cartsize}
 
 
     </jsp:body>
