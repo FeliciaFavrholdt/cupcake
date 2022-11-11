@@ -22,7 +22,6 @@
                 <option value="8">Lemon</option>
                 <option value="9">Blue cheese</option>
             </select>
-            <br><br>
             <label for="bottoms">The Bottoms:</label>
             <select name="bottoms" id="bottoms">
                 <option value="1">Chocolate</option>
@@ -33,7 +32,11 @@
             </select>
             <label for="quantity">Number of cupcakes:</label>
             <input type="number" id="quantity" name="quantity" min="1" max="50"/>
-            <br><br>
+            <label id="cupcakePrice">Price:
+                <c:forEach var="item" items="${sessionScope.cart.cupcakeList}">
+                    ${item.cupcakePrice}
+                </c:forEach>
+            </label>
             <button name="AddToCart">Add to cart</button>
         </form>
 
