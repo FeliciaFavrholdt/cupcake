@@ -31,8 +31,8 @@
                 <option value="4">Pistacio</option>
                 <option value="5">Almond</option>
             </select>
-            <label for="amount">Number of cupcakes:</label>
-            <input type="number" id="amount" name="amount" min="1"/>
+            <label for="quantity">Number of cupcakes:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="50"/>
             <br><br>
             <button name="AddToCart">Add to cart</button>
         </form>
