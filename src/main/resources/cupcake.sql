@@ -25,7 +25,7 @@ DROP TABLE IF EXISTS `bottom`;
 CREATE TABLE `bottom` (
   `bottomID` int NOT NULL AUTO_INCREMENT,
   `bottom` varchar(45) NOT NULL,
-  `bottomPrice` double NOT NULL,
+  `bottomPrice` int NOT NULL,
   PRIMARY KEY (`bottomID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -75,8 +75,8 @@ DROP TABLE IF EXISTS `orderline`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `orderline` (
   `orderlineID` int NOT NULL AUTO_INCREMENT,
-  `toppingPrice` double NOT NULL,
-  `bottomPrice` double NOT NULL,
+  `toppingPrice` int NOT NULL,
+  `bottomPrice` int NOT NULL,
   `quantity` int NOT NULL,
   `cupcakeID` int NOT NULL,
   `orderID` int NOT NULL,
@@ -111,7 +111,7 @@ DROP TABLE IF EXISTS `topping`;
 CREATE TABLE `topping` (
   `toppingID` int NOT NULL AUTO_INCREMENT,
   `topping` varchar(45) NOT NULL,
-  `toppingPrice` double NOT NULL,
+  `toppingPrice` int NOT NULL,
   PRIMARY KEY (`toppingID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -141,7 +141,7 @@ CREATE TABLE `user` (
   `balance` double NOT NULL,
   PRIMARY KEY (`userID`),
   UNIQUE KEY `username_UNIQUE` (`username`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -150,7 +150,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (3,'test@gmail.com','1234','user',1200);
+INSERT INTO `user` VALUES (3,'test@gmail.com','1234','user',1200),(4,'admin@gmail.com','1234','admin',0);
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -163,4 +163,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-11-11  1:24:03
+-- Dump completed on 2022-11-11  6:21:02

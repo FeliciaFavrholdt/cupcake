@@ -32,7 +32,4 @@ class OrderMapper {
         }
         return orderList;
     }
-
-}
-
 }

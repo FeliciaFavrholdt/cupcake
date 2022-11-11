@@ -13,7 +13,7 @@
         <p>Don't have a profile? Create a new user here.</p>
 
         <div class="form-outline mb-4">
-            <form style="width:100px" action="createUser" method="post">
+            <form style="width:100px" action="createuser" method="post">
                 <input type="text" id="username" placeholder="name@mail.com" name="username"/>
                 <br>
                 <br>

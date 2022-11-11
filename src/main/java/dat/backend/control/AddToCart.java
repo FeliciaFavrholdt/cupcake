@@ -26,7 +26,7 @@ public class AddToCart extends HttpServlet {
         int toppingID = Integer.parseInt((request.getParameter("toppings")));
         int bottomID = Integer.parseInt((request.getParameter("bottoms")));
         int quantity = Integer.parseInt((request.getParameter("quantity")));
-        double cupcakePrice = Double.parseDouble((request.getParameter("cupcakePrice")));
+        int cupcakePrice = Integer.parseInt((request.getParameter("cupcakePrice")));
 
         Topping topping = null;
         try {
