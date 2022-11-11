@@ -6,6 +6,7 @@ public class User {
     private String username;
     private String password;
     private String role;
+    private int balance;
 
     public User(String username, String password, String role) {
         this.username = username;
@@ -37,6 +38,14 @@ public class User {
         this.role = role;
     }
 
+    public int getBalance() {
+        return balance;
+    }
+
+    public void setBalance(int balance) {
+        this.balance = balance;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -48,15 +57,16 @@ public class User {
 
     @Override
     public int hashCode() {
-        return Objects.hash(getUsername(), getPassword(), getRole());
+        return Objects.hash(getUsername(), getPassword(), getRole(), getBalance());
     }
 
     @Override
     public String toString() {
         return "User{" +
-                "brugerNavn='" + username + '\'' +
-                ", kodeord='" + password + '\'' +
-                ", rolle='" + role + '\'' +
+                "username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", role='" + role + '\'' +
+                ", balance=" + balance +
                 '}';
     }
 }

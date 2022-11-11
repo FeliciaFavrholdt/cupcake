@@ -30,8 +30,7 @@ public class CreateUser extends HttpServlet {
         String password = request.getParameter("password");
 
         try {
-            UserFacade.createUser(username, password,"user", connectionPool);
-            User user = UserFacade.login(username, password, connectionPool);
+            User user = UserFacade.createUser(username, password,"user", connectionPool);
             session = request.getSession();
             session.setAttribute("user", user); // adding user object to session scope
             request.getRequestDispatcher("WEB-INF/login.jsp").forward(request, response);

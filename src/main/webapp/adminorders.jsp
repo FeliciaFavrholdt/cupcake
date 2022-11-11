@@ -33,19 +33,19 @@
                     <td>Date</td>
                     <td>price</td>
                     <td>Yes/no</td>
-                    <td><input type="submit" value="Delete"></td>
+                    <td><button name="DeleteOrder">Delete</button></td>
                 </tr>
                 <tr>
                     <td>Date</td>
                     <td>price</td>
                     <td>Yes/no</td>
-                    <td><input type="submit" value="Delete"></td>
+                    <td><button name="DeleteOrder">Delete</button></td>
                 </tr>
                 <tr>
                     <td>Date</td>
                     <td>price</td>
                     <td>Yes/no</td>
-                    <td><input type="submit" value="Delete"></td>
+                    <td><button name="DeletOrder">Delete</button></td>
                 </tr>
             </table>
         </div>
