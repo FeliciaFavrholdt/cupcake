@@ -24,9 +24,9 @@ public class AddToCart extends HttpServlet {
         int amount = Integer.parseInt(request.getParameter("amount"));
 
         Cupcake cupcake = new Cupcake(toppingID, bottomID, amount);
-        cart.add(cupcake);
-        session.setAttribute("cart", cart);
-        request.setAttribute("cartsize",cart.getNumberOfCupcakes());
+        cart.add(cupcake); //adds a cupcake to the shopping cart
+        session.setAttribute("cart", cart); //saves the new shopping cart on session scope
+        request.setAttribute("cartsize", cart.getNumberOfCupcakes());
 
         request.getRequestDispatcher("shoppingcart.jsp").forward(request,response);
     }

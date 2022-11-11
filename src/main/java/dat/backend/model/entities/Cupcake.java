@@ -35,4 +35,13 @@ public class Cupcake {
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
+
+    @Override
+    public String toString() {
+        return "Cupcake{" +
+                "toppingID=" + toppingID +
+                ", bottomID=" + bottomID +
+                ", quantity=" + quantity +
+                '}';
+    }
 }
