@@ -19,33 +19,22 @@ public class AddToCart extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        ConnectionPool connectionPool = ApplicationStart.getConnectionPool();
+        //ConnectionPool connectionPool = ApplicationStart.getConnectionPool();
         HttpSession session = request.getSession();
         ShoppingCart cart = (ShoppingCart) session.getAttribute("cart");
 
         int toppingID = Integer.parseInt((request.getParameter("toppings")));
         int bottomID = Integer.parseInt((request.getParameter("bottoms")));
         int quantity = Integer.parseInt((request.getParameter("quantity")));
-        int cupcakePrice = Integer.parseInt((request.getParameter("cupcakePrice")));
 
-        Topping topping = null;
-        try {
-            topping = CupcakeFacade.getToppingByID(toppingID, connectionPool);
-        } catch (DatabaseException e) {
-            e.printStackTrace();
-        }
+        //int cupcakePrice = Integer.parseInt((request.getParameter("cupcakePrice")));
+        //Topping topping = CupcakeFacade.getToppingByID(toppingID, connectionPool);
+        //Bottom bottom = CupcakeFacade.getBottomByID(bottomID, connectionPool);
 
-        Bottom bottom = null;
-        try {
-            bottom = CupcakeFacade.getBottomByID(bottomID, connectionPool);
-        } catch (DatabaseException e) {
-            e.printStackTrace();
-        }
-
-        Cupcake cupcake = new Cupcake(topping, bottom, quantity, cupcakePrice);
+        Cupcake cupcake = new Cupcake(toppingID, bottomID, quantity);
         cart.add(cupcake); //adds a cupcake to the shopping cart
         session.setAttribute("cart", cart); //saves the new shopping cart on session scope
         request.setAttribute("cartsize", cart.getNumberOfCupcakes());
-        request.getRequestDispatcher("shoppingcart.jsp").forward(request,response);
+        request.getRequestDispatcher("shoppingcart.jsp").forward(request, response);
     }
 }
