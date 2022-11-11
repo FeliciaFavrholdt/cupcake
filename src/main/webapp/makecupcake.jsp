@@ -32,11 +32,6 @@
             </select>
             <label for="quantity">Number of cupcakes:</label>
             <input type="number" id="quantity" name="quantity" min="1" max="50"/>
-            <label id="cupcakePrice">Price:
-                <c:forEach var="item" items="${sessionScope.cart.cupcakeList}">
-                    ${item.cupcakePrice}
-                </c:forEach>
-            </label>
             <button name="AddToCart">Add to cart</button>
         </form>
 
