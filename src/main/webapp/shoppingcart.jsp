@@ -36,7 +36,7 @@
         </div>
         <br>
         <div class="">
-            <input type="submit" value="Checkout">
+            <button name="orderconfirmation">Checkout</button>
         </div>
     </jsp:body>
 </t:pagetemplate_user>

@@ -19,6 +19,7 @@ public class AddToCart extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setContentType("text/html");
         //ConnectionPool connectionPool = ApplicationStart.getConnectionPool();
         HttpSession session = request.getSession();
         ShoppingCart cart = (ShoppingCart) session.getAttribute("cart");
