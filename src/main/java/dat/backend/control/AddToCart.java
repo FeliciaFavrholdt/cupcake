@@ -22,11 +22,12 @@ public class AddToCart extends HttpServlet {
         int toppingID = Integer.parseInt((request.getParameter("toppings")));
         int bottomID = Integer.parseInt((request.getParameter("bottoms")));
         int quantity = Integer.parseInt((request.getParameter("quantity")));
+        double cupcakePrice = Double.parseDouble((request.getParameter("cupcakePrice")));
 
         Topping topping = CupcakeFacade.getToppingByID(toppingID);
         Bottom bottom = CupcakeFacade.getBottomByID(bottomID);
 
-        Cupcake cupcake = new Cupcake(toppingID, bottomID, quantity);
+        Cupcake cupcake = new Cupcake(topping, bottom, quantity, cupcakePrice);
         cart.add(cupcake); //adds a cupcake to the shopping cart
         session.setAttribute("cart", cart); //saves the new shopping cart on session scope
         request.setAttribute("cartsize", cart.getNumberOfCupcakes());

@@ -7,11 +7,11 @@ public class Cupcake {
     private double cupcakePrice;
 
     //constructor
-    public Cupcake(Topping topping, Bottom bottom, int toppingID, int bottomID, int quantity, double totalPrice) {
+    public Cupcake(Topping topping, Bottom bottom, int quantity, double cupcakePrice) {
         this.topping = topping;
         this.bottom = bottom;
         this.quantity = quantity;
-        this.cupcakePrice = cupcakePrice;
+        this.cupcakePrice = bottom.getBottomPrice() + topping.getToppingPrice();
     }
 
     public Topping getTopping() {
